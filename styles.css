@@ -47,24 +47,24 @@ footer {
 }
 
 /* Dark mode */
-.dark-mode body {
+body.dark-mode {
     background-color: #000;
     color: #fff;
 }
 
-.dark-mode header {
+header.dark-mode {
     background-color: #000;
 }
 
-.dark-mode nav ul li a {
+nav ul li a.dark-mode {
     color: #fff;
 }
 
-.dark-mode footer {
+footer.dark-mode {
     background-color: #000;
 }
 
-.dark-mode button {
+button.dark-mode {
     background-color: #fff;
     color: #000;
     border: none;
@@ -73,18 +73,7 @@ footer {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.dark-mode button:hover {
+button.dark-mode:hover {
     background-color: #000;
     color: #fff;
-}
-
-/* Language toggle button */
-#language-toggle {
-    background-color: #fff;
-    color: #000;
-    border: none;
-    padding: 8px 16px;
-    margin-right: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
 }
