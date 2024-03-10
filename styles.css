@@ -1,12 +1,20 @@
 /* styles.css */
-body {
-    font-family: Arial, sans-serif;
+
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #000;
+    background-color: #fff;
+    transition: background-color 0.3s ease;
 }
 
 header {
-    background-color: #333;
+    background-color: #007bff;
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -32,11 +40,40 @@ section {
 }
 
 footer {
-    background-color: #333;
+    background-color: #007bff;
     color: #fff;
     text-align: center;
     padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+}
+
+/* Dark mode */
+.dark-mode body {
+    background-color: #000;
+    color: #fff;
+}
+
+.dark-mode header {
+    background-color: #000;
+}
+
+.dark-mode nav ul li a {
+    color: #fff;
+}
+
+.dark-mode footer {
+    background-color: #000;
+}
+
+.dark-mode button {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode button:hover {
+    background-color: #000;
+    color: #fff;
 }
